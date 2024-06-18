@@ -7,3 +7,35 @@ The chat app will allow only to chat it does not have a database it only stores 
 3. Adding a database.
 4. Add user login and signup.
 5. Make it more professional and add personal chat rooms and chat groups.
+
+# Flask Chat Application
+
+## Description
+
+This is a simple real-time chat application built using Flask and Socket.IO. Users can connect, send messages, and choose different fonts for their messages. This README provides instructions on how to set up and use the application locally.
+
+## Installation
+
+### Prerequisites
+
+- Python 3.x installed on your system.
+- Git installed on your system (optional for cloning the repository).
+
+### Setup
+
+1. **Clone the Repository:**
+
+   ```bash
+   git clone https://github.com/your-username/flask-chat-app.git
+   cd flask-chat-app
+
+   #Create and activate virtual Environment:
+   python -m venv .venv  # Create virtual environment named .venv
+   source .venv/bin/activate  # Activate virtual environment (Linux/macOS)
+   .venv\Scripts\activate # Or, on Windows:
+   
+   # Install dependencies:
+   pip install -r requirements.txt
+ 
+   # Run the application:
+   python app.py
