@@ -1,5 +1,5 @@
 ﻿# chat-app-python
-The chat app will allow only to chat it does not have a database it only stays in the local storeage.
+The chat app will allow only to chat it does not have a database it only stores the convo in the local storeage.
 
 ### Remaining work
 1. Add the coded english letters.
