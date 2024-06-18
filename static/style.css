@@ -1,0 +1,60 @@
+/* Custom font definitions */
+@font-face {
+    font-family: 'Playwrite NL';
+    src: url('../static/fonts/PlaywriteNL-VariableFont_wght.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Teko';
+    src: url('../static/fonts/Teko-VariableFont_wght.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+/* Body styling */
+body {
+    font-family: 'Arial', sans-serif; /* Default fallback font */
+}
+
+/* Message styling */
+#messages {
+    max-height: 300px; /* Example height for message container */
+    overflow-y: auto; /* Enable scrolling */
+}
+
+#messages p {
+    margin: 5px 0; /* Margin between messages */
+    padding: 5px; /* Padding inside each message */
+    border-radius: 5px; /* Rounded corners for messages */
+}
+
+/* Form input and button styling */
+#messageInput {
+    width: 70%; /* Adjust width as needed */
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 5px;
+}
+
+#sendButton {
+    padding: 8px 15px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Font selection dropdown styling */
+#fontSelect {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 5px;
+}

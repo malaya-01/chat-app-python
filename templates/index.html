@@ -1,0 +1,156 @@
+<!-- <!DOCTYPE html>
+<html>
+
+<head>
+    <title>Chat</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const socket = io();
+
+            socket.on('connect', () => {
+                console.log('Connected');
+            });
+
+            // socket.on('message', (data) => {
+            //     const p = document.createElement('p');
+            //     const span = document.createElement('span');
+            //     p.innerHTML = data.sid + ": " + data.msg;
+            //     p.style.fontFamily = data.font;
+            //     document.getElementById('messages').appendChild(p);
+            // });
+
+            // socket.on('message', (data) => {
+            //     const messageContainer = document.createElement('div');
+            //     messageContainer.classList.add('message');
+
+            //     const sender = document.createElement('span');
+            //     sender.textContent = data.sid + ": ";
+            //     sender.classList.add('sender');
+
+            //     const messageText = document.createElement('span');
+            //     messageText.textContent = data.msg;
+            //     messageText.style.fontFamily = data.font;
+            //     messageText.classList.add('message-text');
+
+            //     messageContainer.appendChild(sender);
+            //     messageContainer.appendChild(messageText);
+
+            //     document.getElementById('messages').appendChild(messageContainer);
+            // });
+
+            socket.on('message', (data) => {
+                const messageContainer = document.createElement('div');
+                messageContainer.classList.add('message');
+
+                const sender = document.createElement('span');
+                sender.textContent = data.username + ": ";
+                sender.classList.add('sender');
+
+                const messageText = document.createElement('span');
+                messageText.textContent = data.msg;
+                messageText.style.fontFamily = data.font;
+                messageText.classList.add('message-text');
+
+                messageContainer.appendChild(sender);
+                messageContainer.appendChild(messageText);
+
+                document.getElementById('messages').appendChild(messageContainer);
+            });
+
+
+            document.getElementById('sendButton').onclick = () => {
+                const msg = document.getElementById('messageInput').value;
+                const font = document.getElementById('fontSelect').value;
+                socket.send({ msg: msg, font: font });
+                document.getElementById('messageInput').value = '';
+            };
+        });
+    </script>
+</head>
+
+<body>
+    <h1>Chat</h1>
+    <div id="messages"></div>
+    <input id="messageInput" type="text" placeholder="Enter message">
+    <select id="fontSelect">
+        <option value="Arial, sans-serif">Arial</option>
+        <option value="'Playwrite NL', sans-serif">Playwrite NL</option>
+        <option value="'Teko', sans-serif">Teko</option>
+    </select>
+    <button id="sendButton">Send</button>
+</body>
+
+</html> -->
+
+
+<!-- Third try corresponding to the app.py file -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Chat</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const socket = io();
+
+            socket.on('connect', () => {
+                console.log('Connected');
+            });
+
+            socket.on('message', (data) => {
+                const messageContainer = document.createElement('div');
+                messageContainer.classList.add('message');
+
+                const sender = document.createElement('span');
+                sender.textContent = data.username + ": ";
+                sender.classList.add('sender');
+
+                const messageText = document.createElement('span');
+                messageText.textContent = data.msg;
+                messageText.style.fontFamily = data.font;
+                messageText.classList.add('message-text');
+
+                messageContainer.appendChild(sender);
+                messageContainer.appendChild(messageText);
+
+                document.getElementById('messages').appendChild(messageContainer);
+            });
+
+            // document.getElementById('sendButton').onclick = () => {
+            //     const msg = document.getElementById('messageInput').value;
+            //     const font = document.getElementById('fontSelect').value;
+            //     socket.emit('message', {msg: msg, font: font});
+            //     document.getElementById('messageInput').value = '';
+            // };
+            document.getElementById('sendButton').onclick = () => {
+                const msg = document.getElementById('messageInput').value;
+                const font = document.getElementById('fontSelect').value;
+                console.log('Sending message:', msg, 'with font:', font);
+                socket.emit('message', { msg: msg, font: font });
+                document.getElementById('messageInput').value = '';
+            };
+
+        });
+    </script>
+</head>
+
+<body>
+    <h1>Chat</h1>
+    <div id="messages"></div>
+    <input id="messageInput" type="text" placeholder="Enter message">
+    <!-- Font selection dropdown -->
+    <select id="fontSelect">
+        <option value="Arial, sans-serif">Arial</option>
+        <option value="'Playwrite NL', sans-serif">Playwrite NL</option>
+        <option value="'Teko', sans-serif">Teko</option>
+        <!-- Add other options for additional custom fonts -->
+    </select>
+    <button id="sendButton">Send</button>
+</body>
+
+</html>
