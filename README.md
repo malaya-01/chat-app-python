@@ -15,13 +15,22 @@ The chat app will allow only to chat it does not have a database it only stores 
 1. **Clone the Repository:**
 
    ```bash
+   # Clone the repo
    git clone https://github.com/your-username/flask-chat-app.git
+<<<<<<< HEAD
+=======
+
+   # Change directory
+>>>>>>> 126ae4c0ec94076afa882e3686cca199bde42fb1
    cd chat-app-python
 2. **Create and activate virtual Environment:**
    ```bash
-   python -m venv .venv  # Create virtual environment named .venv
+   # Create virtual environment named .venv
+   python -m venv .venv
+   
    #Activate virtual environment (Linux/macOS)
-    source .venv/bin/activate  
+    source .venv/bin/activate
+   
    #Activate virtual environment (Windows)
     .venv\Scripts\activate 
     
@@ -32,7 +41,6 @@ The chat app will allow only to chat it does not have a database it only stores 
 4. **Run the application:**
    ```bash
    python app.py
-
 
 ### Remaining work
 1. Add the coded english letters.
