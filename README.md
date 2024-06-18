@@ -16,7 +16,7 @@ The chat app will allow only to chat it does not have a database it only stores 
 
    ```bash
    git clone https://github.com/your-username/flask-chat-app.git
-   cd flask-chat-app
+   cd chat-app-python
 2. **Create and activate virtual Environment:**
    ```bash
    python -m venv .venv  # Create virtual environment named .venv
