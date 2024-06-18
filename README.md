@@ -28,14 +28,17 @@ This is a simple real-time chat application built using Flask and Socket.IO. Use
    ```bash
    git clone https://github.com/your-username/flask-chat-app.git
    cd flask-chat-app
+2. **Create and activate virtual Environment:**
+   ```bash
 
-   #Create and activate virtual Environment:
    python -m venv .venv  # Create virtual environment named .venv
    source .venv/bin/activate  # Activate virtual environment (Linux/macOS)
    .venv\Scripts\activate # Or, on Windows:
    
-   # Install dependencies:
+3. **Install dependencies:**
+   ```bash
    pip install -r requirements.txt
  
-   # Run the application:
+4. **Run the application:**
+   ```bash
    python app.py
