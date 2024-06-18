@@ -3,13 +3,6 @@
 This is a simple real-time chat application built using Flask and Socket.IO. Users can connect, send messages, and choose different fonts for their messages. This README provides instructions on how to set up and use the application locally.
 The chat app will allow only to chat it does not have a database it only stores the convo in the local storeage.
 
-### Remaining work
-1. Add the coded english letters.
-2. Improving the UI.
-3. Adding a database.
-4. Add user login and signup.
-5. Make it more professional and add personal chat rooms and chat groups.
-
 ## Installation
 
 ### Prerequisites
@@ -39,3 +32,11 @@ The chat app will allow only to chat it does not have a database it only stores 
 4. **Run the application:**
    ```bash
    python app.py
+
+
+### Remaining work
+1. Add the coded english letters.
+2. Improving the UI.
+3. Adding a database.
+4. Add user login and signup.
+5. Make it more professional and add personal chat rooms and chat groups.
