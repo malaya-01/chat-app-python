@@ -31,11 +31,11 @@ This is a simple real-time chat application built using Flask and Socket.IO. Use
 2. **Create and activate virtual Environment:**
    ```bash
    python -m venv .venv  # Create virtual environment named .venv
-2.1 **Activate virtual environment (Linux/macOS)**
+2. **Activate virtual environment (Linux/macOS)**
     ```bash
     source .venv/bin/activate  
             
-2.2 **Activate virtual environment (Windows)**
+2. **Activate virtual environment (Windows)**
     ```bash
     .venv\Scripts\activate 
     
