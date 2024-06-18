@@ -39,7 +39,6 @@ The chat app will allow only to chat it does not have a database it only stores 
    ```bash
    python app.py
 
-
 ### Remaining work
 1. Add the coded english letters.
 2. Improving the UI.
