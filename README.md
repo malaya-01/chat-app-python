@@ -15,13 +15,19 @@ The chat app will allow only to chat it does not have a database it only stores 
 1. **Clone the Repository:**
 
    ```bash
+   # Clone the repo
    git clone https://github.com/your-username/flask-chat-app.git
+
+   # Change directory
    cd flask-chat-app
 2. **Create and activate virtual Environment:**
    ```bash
-   python -m venv .venv  # Create virtual environment named .venv
+   # Create virtual environment named .venv
+   python -m venv .venv
+   
    #Activate virtual environment (Linux/macOS)
-    source .venv/bin/activate  
+    source .venv/bin/activate
+   
    #Activate virtual environment (Windows)
     .venv\Scripts\activate 
     
