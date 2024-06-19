@@ -1,7 +1,7 @@
-﻿# chat app python with flask
+﻿# Chat App Python with Flask
+
 ## Description
-This is a simple real-time chat application built using Flask and Socket.IO. Users can connect, send messages, and choose different fonts for their messages. This README provides instructions on how to set up and use the application locally.
-The chat app will allow only to chat it does not have a database it only stores the convo in the local storeage.
+This is a simple real-time chat application built using Flask and Socket.IO. Users can connect, send messages, and choose different fonts for their messages. This README provides instructions on how to set up and use the application locally. The chat app will allow only to chat; it does not have a database and only stores the conversation in local storage.
 
 ## Installation
 
@@ -17,12 +17,10 @@ The chat app will allow only to chat it does not have a database it only stores 
    ```bash
    # Clone the repo
    git clone https://github.com/your-username/flask-chat-app.git
-<<<<<<< HEAD
-=======
 
    # Change directory
->>>>>>> 126ae4c0ec94076afa882e3686cca199bde42fb1
    cd chat-app-python
+
 2. **Create and activate virtual Environment:**
    ```bash
    # Create virtual environment named .venv
